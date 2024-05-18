@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  arktype:
+    specifier: 2.0.0-dev.13
+    version: 2.0.0-dev.13
   next:
     specifier: 14.2.3
     version: 14.2.3(react-dom@18.3.1)(react@18.3.1)
@@ -47,6 +50,16 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
     dev: true
+
+  /@arktype/schema@0.1.5:
+    resolution: {integrity: sha512-99lnx+I+oRFEpcPxrrOHMZgcntUzrya/i4WdfcSfeET5mcfQI2xKISdA/jebaDbXgaMlP0+uEdtPUc70JJooRQ==}
+    dependencies:
+      '@arktype/util': 0.0.42
+    dev: false
+
+  /@arktype/util@0.0.42:
+    resolution: {integrity: sha512-A/LOal4oZy7Yj9fCkqe/4hsb+jqWnMDiECvdkcAkpqVoIOL9Jm/YmYNxXDBefPLb7T+vZ9pCYxrZ5qpCoXpBlQ==}
+    dev: false
 
   /@babel/runtime@7.24.5:
     resolution: {integrity: sha512-Nms86NXrsaeU9vbBJKni6gXiEXZ4CVpYVzEjDH9Sb8vmZ3UljyA1GSOJl/6LGPO8EHLuSF9H+IxNXHPX8QHJ4g==}
@@ -453,6 +466,13 @@ packages:
     dependencies:
       dequal: 2.0.3
     dev: true
+
+  /arktype@2.0.0-dev.13:
+    resolution: {integrity: sha512-g/SA8Lp7LB4/0sAGoN57x07DcpIEeSaD/inWhkZ/sJON29vmUS1jnCqemaDmoxfSMpGEvu2UX5wlSJj380l3bA==}
+    dependencies:
+      '@arktype/schema': 0.1.5
+      '@arktype/util': 0.0.42
+    dev: false
 
   /array-buffer-byte-length@1.0.1:
     resolution: {integrity: sha512-ahC5W1xgou+KTXix4sAO8Ki12Q+jf4i0+tmk3sC+zgcynshkHxzpXdImBehiUYKKKDwvfFiJl1tZt6ewscS1Mg==}
